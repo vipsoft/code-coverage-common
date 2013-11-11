@@ -3,7 +3,7 @@
  * Aggregate
  *
  * @copyright 2013 Anthon Pang
- * @license BSD-2-Clause
+ * @license BSD-3-Clause
  */
 
 namespace VIPSoft\CodeCoverageCommon\Model;
