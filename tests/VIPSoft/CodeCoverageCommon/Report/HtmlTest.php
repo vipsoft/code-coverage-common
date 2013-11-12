@@ -45,7 +45,6 @@ class HtmlTest extends TestCase
             if ($e->getMessage() === 'Could not write to vfs://tmp/index.dashboard.html: /tmp/index.dashboard.html): failed to open stream: "org\bovigo\vfs\vfsStreamWrapper::stream_open" call failed') {
                 $this->markTestSkipped();
             } else {
-var_dump($e->getMessage());
                 $this->fail();
             }
         }
