@@ -82,9 +82,9 @@ class Text implements ReportInterface
      */
     public function process(\PHP_CodeCoverage $coverage)
     {
-        return $this->report(
+        return $this->report->process(
             $coverage,
-            $options['showColors']
+            $this->options['showColors']
         );
     }
 

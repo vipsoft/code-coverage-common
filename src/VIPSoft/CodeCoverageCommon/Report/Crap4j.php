@@ -53,10 +53,10 @@ class Crap4j implements ReportInterface
      */
     public function process(\PHP_CodeCoverage $coverage)
     {
-        return $this->report(
+        return $this->report->process(
             $coverage,
-            $options['target'],
-            $options['name']
+            $this->options['target'],
+            $this->options['name']
         );
     }
 }

@@ -72,9 +72,9 @@ class Html implements ReportInterface
      */
     public function process(\PHP_CodeCoverage $coverage)
     {
-        return $this->report(
+        return $this->report->process(
             $coverage,
-            $options['target']
+            $this->options['target']
         );
     }
 }
