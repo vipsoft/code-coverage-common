@@ -44,6 +44,9 @@ class Aggregate
 
         foreach ($counts as $line => $status) {
             if ( ! isset($this->coverage[$class][$line]) || $status > 0) {
+                // converts "hits" to "status"
+                $status = ! $status ? -1 : ($status > 1 ? 1 : $status);
+
                 $this->coverage[$class][$line] = $status;
             }
         }
