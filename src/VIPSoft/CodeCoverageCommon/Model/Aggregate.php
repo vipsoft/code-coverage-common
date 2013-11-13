@@ -34,7 +34,7 @@ class Aggregate
      * @param string $class
      * @param array  $counts
      */
-    public function update($class, $counts)
+    public function update($class, array $counts)
     {
         if ( ! isset($this->coverage[$class])) {
             $this->coverage[$class] = $counts;

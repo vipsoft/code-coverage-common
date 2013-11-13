@@ -23,7 +23,7 @@ class Factory
      *
      * @return \VIPSoft\CodeCoverageCommon\ReportInterface|null
      */
-    public function create($reportType, $options)
+    public function create($reportType, array $options)
     {
         if (in_array($reportType, array('clover', 'crap4j', 'html', 'php', 'text', 'xml'))) {
             $className = '\VIPSoft\CodeCoverageCommon\Report\\' . ucfirst($reportType);
