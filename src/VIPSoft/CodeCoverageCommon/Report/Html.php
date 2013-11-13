@@ -57,12 +57,12 @@ class Html implements ReportInterface
         }
 
         $this->report = new \PHP_CodeCoverage_Report_HTML(
-                            $options['charset'],
-                            $options['highlight'],
-                            $options['lowUpperBound'],
-                            $options['highUpperBound'],
-                            $options['generator']
-                        );
+            $options['charset'],
+            $options['highlight'],
+            $options['lowUpperBound'],
+            $options['highUpperBound'],
+            $options['generator']
+        );
 
         $this->options = $options;
     }

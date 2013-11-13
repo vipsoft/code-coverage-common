@@ -56,22 +56,22 @@ class Text implements ReportInterface
             $outputStream = new \PHPUnit_Util_Printer($options['printer']);
 
             $this->report = new \PHP_CodeCoverage_Report_Text(
-                            $outputStream,
-                            $options['lowUpperBound'],
-                            $options['highUpperBound'],
-                            $options['showUncoveredFiles']
-                        );
+                $outputStream,
+                $options['lowUpperBound'],
+                $options['highUpperBound'],
+                $options['showUncoveredFiles']
+            );
         } else {
             if ( ! isset($options['showOnlySummary'])) {
                 $options['showOnlySummary'] = false;
             }
 
             $this->report = new \PHP_CodeCoverage_Report_Text(
-                                $options['lowUpperBound'],
-                                $options['highUpperBound'],
-                                $options['showUncoveredFiles'],
-                                $options['showOnlySummary']
-                            );
+                $options['lowUpperBound'],
+                $options['highUpperBound'],
+                $options['showUncoveredFiles'],
+                $options['showOnlySummary']
+            );
         }
 
         $this->options = $options;
