@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "d6e0b83ef2ae234073edd20bc99c538e",
+    "hash": "ae2fbaf41ff4fa0b073dd4b370afae5c",
     "packages": [
         {
             "name": "phpunit/php-code-coverage",
@@ -459,6 +460,7 @@
     "stability-flags": [
 
     ],
+    "prefer-stable": false,
     "platform": [
 
     ],
